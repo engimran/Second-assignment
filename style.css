@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.title {
+    font-weight: 800;
+    padding: 20px;
+}
+.head-title{
+    font-weight: bolder;
+}
+
+/* .........main part ........ */
+
+.journey-part{
+    display: grid;
+    grid-gap:30px;
+    margin-top: 20px;
+    padding-left: 50px;
+    align-items: center;
+
+}
+.journey-part{
+    grid-template-columns: repeat(2, 1fr);
+}
+.transform:hover{
+    transform:rotateZ(10deg);
+}
+.logo-size img{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 25px;
+    justify-content: center;
+    align-items: center;
+}
+/* .........button-part............. */
+
+.button-details{
+    display: flex;
+    background: #E02C6D;
+    color: white;
+    width: 30%;
+    padding-left: 30px;
+    padding-top: 5px;
+    border-radius: 10px;
+    margin: 10px 0px 20px 0px;
+        
+}
+.button a{
+    text-decoration: none;
+    color: white;
+    padding-right: 10px;
+    font-weight: 700;
+}
+.section-title{
+    text-align: center;
+}
+.items{
+    display: grid;
+    grid-gap:30px;
+    margin-top: 20px;
+    place-items: center;
+}
+.items{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.thumbnail img{
+    width: 200px;
+    margin-right: 20px;
+}
+.filled{
+    color:goldenrod;
+    font-size: 0.8em;
+}
+
+.item img{
+    width: 200px;
+}
+.item-info{
+    display: flex;
+}
+
+/* ..........second button.......... */
+.button-second{
+    display:flex;
+    color: #E02C6D;
+    position:absolute;
+    right: 50px;
+
+    
+   
+}
+.second-button a {
+    text-decoration: none;
+    color: #E02C6D;
+    font-weight: 700;
+    padding-right: 5px;
+}
+
+
+ /* Ending part */
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 100px;
+}
+.social-media a {
+    color: white;
+}
+@media (max-width:992px){
+    .journey-part, .items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+   
+}
+@media (max-width:668px){
+    .journey-part, .items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
